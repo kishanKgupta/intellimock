@@ -2,6 +2,7 @@
 import { UserButton } from '@clerk/nextjs';
 import React,{useEffect} from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const Header = () => {
  
@@ -16,7 +17,8 @@ const Header = () => {
 
   return (
     <div className="flex p-4 items-center justify-between bg-secondry shadow-md">
-      <img src={"./logo.svg"} width={100} height={60} alt="logo" />
+      {/* <img src={"./logo.svg"} width={100} height={60} alt="logo" /> */}
+      <Image src={"/logo.svg"} width={100} height={60} alt="logo" />
       <ul className="hidden md:flex gap-6">
         <li
           className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
