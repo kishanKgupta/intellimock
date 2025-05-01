@@ -143,7 +143,7 @@ const AddNewInterview = () => {
                     {loading ? (
                       <>
                         <LoaderCircle className="animate-spin mr-2" />
-                        AI
+                        Generate to AI
                       </>
                     ) : (
                       "Start Interview"
