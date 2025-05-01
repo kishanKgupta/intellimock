@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS mockinterview (
 
 CREATE TABLE IF NOT EXISTS useranswer (
     id SERIAL PRIMARY KEY,
-    mockIdRef VARCHAR NOT NULL,
-    question VARCHAR NOT NULL,
+    mockIdRef VARCHAR ,
+    question VARCHAR ,
     correctAns TEXT,
     userAns TEXT,
     feedback TEXT,

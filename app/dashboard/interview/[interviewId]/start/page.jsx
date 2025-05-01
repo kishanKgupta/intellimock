@@ -11,7 +11,7 @@ import { cleanJsonMockResp } from "@/utils/cleanJsonMockResp";
 import { use } from "react";
 
 const StartInterview = ({ params }) => {
-  const params1 = use(params)
+  const params1 = use(params);
   const [interViewData, setInterviewData] = useState();
   const [mockInterviewQuestion, setMockInterviewQuestion] = useState();
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
@@ -38,13 +38,13 @@ const StartInterview = ({ params }) => {
         />
         {/* video or audio recording */}
         <RecordAnswerSection
-          // mockInterviewQuestion={mockInterviewQuestion}
-          // activeQuestionIndex={activeQuestionIndex}
-          // interviewData={interViewData}
+          mockInterviewQuestion={mockInterviewQuestion}
+          activeQuestionIndex={activeQuestionIndex}
+          interviewData={interViewData}
         />
       </div>
-      <div className="flex justify-end gap-6">
-        {/* {activeQuestionIndex > 0 && (
+      <div className="flex justify-end gap-6 mb-20">
+        {activeQuestionIndex > 0 && (
           <Button
             onClick={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
           >
@@ -57,7 +57,7 @@ const StartInterview = ({ params }) => {
           >
             Next Question
           </Button>
-        )} */}
+        )}
         {activeQuestionIndex == mockInterviewQuestion?.length - 1 && (
           <Link
             href={"/dashboard/interview/" + interViewData?.mockId + "/feedback"}

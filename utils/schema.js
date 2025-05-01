@@ -8,17 +8,17 @@ export const MockInterview = pgTable('mockInterview', {
     jobExperience: varchar('jobExperience').notNull(),
     createdBy: varchar('createdBy').notNull(),
     createdAt: varchar('createdAt'),
-    mockId: varchar('mockId').notNull()
-})
+    mockId: varchar('mockId').notNull().unique()
+});
 
 export const UserAnswer = pgTable('useranswer', {
     id: serial('id').primaryKey(),
-    mockIdRef: varchar('mockId').notNull(),
+    mockIdRef: varchar('mockId').references(() => MockInterview.mockId),
     question: varchar('question').notNull(),
-    correctAns: text('correctAns'),
-    userAns: text('userAns'),
-    feedback: text('feedback'),
-    rating: varchar('rating'),
-    userEmail: varchar('userEmail'),
-    createdAt: varchar('createdAt')
-})
+    correctAns: text('correctAns').notNull(),
+    userAns: text('userAns').notNull(),
+    feedback: text('feedback').notNull(),
+    rating: varchar('rating').notNull(),
+    userEmail: varchar('userEmail').notNull(),
+    createdAt: varchar('createdAt').notNull()
+});

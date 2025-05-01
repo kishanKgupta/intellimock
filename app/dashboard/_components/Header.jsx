@@ -7,13 +7,6 @@ import Image from 'next/image';
 const Header = () => {
  
   const path = usePathname();
-  useEffect(() => {
-    
-    console.log(path)
-
-
-  },[])
-
 
   return (
     <div className="flex p-4 items-center justify-between bg-secondry shadow-md">
