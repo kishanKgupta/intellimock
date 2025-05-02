@@ -20,7 +20,8 @@ export default function Page() {
               Welcome to IntelliMock
             </h1>
             <p className="text-lg lg:text-xl mb-8 text-gray-200">
-              Practice your interview skills with AI-powered mock interviews. Get instant feedback and improve your performance.
+              Practice your interview skills with AI-powered mock interviews.
+              Get instant feedback and improve your performance.
             </p>
             <div className="space-y-3">
               <div className="flex items-center justify-center space-x-2">
@@ -59,15 +60,19 @@ export default function Page() {
                   card: "w-full shadow-none bg-transparent",
                   headerTitle: "text-2xl font-bold text-center mb-2",
                   headerSubtitle: "text-muted-foreground text-center mb-6",
-                  socialButtonsBlockButton: "hover:bg-secondary transition-colors",
-                  formButtonPrimary: "bg-primary hover:bg-primary/90 transition-colors",
-                  footerActionLink: "text-primary hover:text-primary/90 transition-colors",
+                  socialButtonsBlockButton:
+                    "hover:bg-secondary transition-colors",
+                  formButtonPrimary:
+                    "bg-primary hover:bg-primary/90 transition-colors",
+                  footerActionLink:
+                    "text-primary hover:text-primary/90 transition-colors",
                   formFieldInput: "focus:ring-2 focus:ring-primary/50",
                   formFieldLabel: "text-sm font-medium",
                   identityPreview: "bg-secondary/50",
                   formFieldWarningText: "text-yellow-500",
                   formFieldErrorText: "text-red-500",
-                  footer: "border-t border-gray-200 dark:border-gray-700 mt-6 pt-6",
+                  footer:
+                    "border-t border-gray-200 dark:border-gray-700 mt-6 pt-6",
                 },
                 layout: {
                   socialButtonsPlacement: "bottom",
@@ -83,12 +88,12 @@ export default function Page() {
                 },
               }}
               routing="path"
-              path="/sign-up"
-              signInUrl="/sign-in"
+              path="/sign_up"
+              signInUrl="/sign_in"
             />
           </div>
         </div>
       </div>
     </div>
   );
-} 
+}

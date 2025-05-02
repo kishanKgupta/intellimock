@@ -83,8 +83,8 @@ export default function SignInPage() {
                 },
               }}
               routing="path"
-              path="/sign-in"
-              signUpUrl="/sign-up"
+              path="/sign_in"
+              signUpUrl="/sign_up"
             />
           </div>
         </div>
