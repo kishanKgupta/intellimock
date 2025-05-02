@@ -58,7 +58,7 @@ export default function Home() {
                 className="text-white border-white bg-gray-700 hover:bg-white/10 dark:hover:bg-black"
                 asChild
               >
-                <Link href="/dashboard/mock-interview">Try Mock Interview</Link>
+                <Link href="/dashboard">Try Mock Interview</Link>
               </Button>
             </div>
           </motion.div>
