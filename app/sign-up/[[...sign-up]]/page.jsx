@@ -80,11 +80,11 @@ export default function Page() {
                   logoPlacement: "inside",
                 },
                 variables: {
-                  colorPrimary: "#3b82f6",
-                  colorBackground: "transparent",
-                  colorText: "currentColor",
-                  colorTextSecondary: "currentColor",
-                  colorTextOnPrimaryBackground: "white",
+                  colorPrimary: "#3b82f6", // ✅ Tailwind 'blue-500'
+                  colorBackground: "transparent", // ✅ Allowed keyword
+                  colorText: "#1d4ed8", // ✅ Tailwind 'blue-700'
+                  colorTextSecondary: "#1d4ed8", // ✅ Same, still valid
+                  colorTextOnPrimaryBackground: "white", // ✅ Allowed keyword
                 },
               }}
               routing="path"

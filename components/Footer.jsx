@@ -80,7 +80,7 @@ const Footer = () => {
                 Phone: +1 (555) 123-4567
               </li>
               <li className="text-muted-foreground">
-                Address: 123 Tech Street, Silicon Valley, CA
+                Address: MMMUT, Gorakhpur
               </li>
             </ul>
           </div>
