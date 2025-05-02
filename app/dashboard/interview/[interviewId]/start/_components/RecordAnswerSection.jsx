@@ -48,11 +48,11 @@ const RecordAnswerSection = ({
     if (isRecording) {
       setLoading(true);
       stopSpeechToText();
-      if (userAnswer?.length < 10) {
-        setLoading(false)
-        toast("Error while saving your answer,please record again");
-        return;
-      }
+      // if (userAnswer?.length < 10) {
+      //   setLoading(false)
+      //   toast("Error while saving your answer,please record again");
+      //   return;
+      // }
     } else {
       startSpeechToText();
     }
