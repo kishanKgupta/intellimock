@@ -48,7 +48,7 @@ export default function Home() {
                 className="bg-primary hover:bg-primary/90"
                 asChild
               >
-                <Link href="/sign_up">
+                <Link href="/sign-up">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -277,7 +277,7 @@ export default function Home() {
               className="text-primary"
               asChild
             >
-              <Link href="/sign_up">
+              <Link href="/sign-up">
                 Get Started Now <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
